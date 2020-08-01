@@ -2,7 +2,8 @@
 * Uddip Amin
 * 991518202
 */
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MYCLASSES } from "../../assets/data/myCourses";
 
 @Component({
   selector: 'app-amin',
@@ -10,10 +11,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./amin.component.css']
 })
 export class AminComponent implements OnInit {
+  i: number;
+  myclasses = MYCLASSES;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick(i) {
+    this.i = i;
+  }
+
+  showHideText(index) {
+    if (index == this.i) {
+      return "block";
+    } else {
+      return "none";
+    }
   }
 
 }

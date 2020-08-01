@@ -3,26 +3,24 @@ Uddip Amin
 991518202
 -->
 <mat-tab-group mat-stretch-tabs
-               class="example-stretched-tabs mat-elevation-z4"
-               id="tab-bar">
-
-  <mat-tab>
+               class="mat-elevation-z4">
+  <mat-tab id="tab1" style="background-color: rgb(169, 201, 189)">
     <ng-template mat-tab-label>
       <mat-icon id="personIco">person</mat-icon>
       &nbsp;&nbsp; My Courses
     </ng-template>
-    <!-- <ul id="myList">
-      <li *ngFor="let cls of myclasses; let i=index" id="s{{i}}"
-          (click)="onClickMe(i)">
-        {{cls.cname}}
+    <ul>
+      <li *ngFor="let cls of myclasses; let i=index"
+          (click)="onClick(i)">
+          {{cls.courseName}}
 
-        <div id='d{{i}}' [ngStyle]="{display: showHideText(i)}">
-          <strong>Class Name: </strong> {{cls.cname}} <br>
-          <strong>Room: </strong> {{cls.room}}<br>
-          <strong>Day of Week: </strong> {{cls.dow}}<br>
-          <strong>Time: </strong> {{cls.tod}}<br>
-        </div>
-      </li> -->
+          <div id='{{i}}' [ngStyle]="{display: showHideText(i)}">
+            <strong>Course Name: </strong> {{cls.courseName}} <br>
+            <strong>Course Credits: </strong> {{cls.credit}}<br>
+            <strong>Course Description: </strong> {{cls.description}}<br>
+          </div>
+      </li>
+    </ul>
   </mat-tab>
 
   <mat-tab>
