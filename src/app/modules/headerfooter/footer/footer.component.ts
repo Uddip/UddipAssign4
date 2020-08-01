@@ -1,5 +1,9 @@
+/*
+* Uddip Amin
+* 991518202
+*/
 import { Component, OnInit, Input } from '@angular/core';
-import { Student } from "../../../student";
+import { MyBio } from "../../../mybio";
 
 @Component({
   selector: 'app-footer',
@@ -7,8 +11,8 @@ import { Student } from "../../../student";
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  @Input() footerInfo: Student;
-  
+  @Input() footerInfo: MyBio;
+
   day;
   month;
   year;

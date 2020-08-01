@@ -1,5 +1,9 @@
+/*
+* Uddip Amin
+* 991518202
+*/
 import { Component } from '@angular/core';
-import { Student } from "./student";
+import { MyBio } from "./mybio";
 
 @Component({
   selector: 'app-root',
@@ -8,9 +12,10 @@ import { Student } from "./student";
 })
 export class AppComponent {
   title = 'UddipAssign4';
-  student: Student = {
+  mybio: MyBio = {
     sid: 991518202,
     sname: "Uddip Amin",
+    imgloc: "assets/images/narvik.jpeg",
     school: "Sheridan College",
     status: "Junior"
   }

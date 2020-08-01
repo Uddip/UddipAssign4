@@ -1,0 +1,42 @@
+<!--
+Uddip Amin
+991518202
+-->
+<mat-tab-group mat-stretch-tabs
+               class="example-stretched-tabs mat-elevation-z4"
+               id="tab-bar">
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon id="personIco">person</mat-icon>
+      &nbsp;&nbsp; My Courses
+    </ng-template>
+    <!-- <ul id="myList">
+      <li *ngFor="let cls of myclasses; let i=index" id="s{{i}}"
+          (click)="onClickMe(i)">
+        {{cls.cname}}
+
+        <div id='d{{i}}' [ngStyle]="{display: showHideText(i)}">
+          <strong>Class Name: </strong> {{cls.cname}} <br>
+          <strong>Room: </strong> {{cls.room}}<br>
+          <strong>Day of Week: </strong> {{cls.dow}}<br>
+          <strong>Time: </strong> {{cls.tod}}<br>
+        </div>
+      </li> -->
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon id="infoIco">info</mat-icon>
+      &nbsp;&nbsp; My Info
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon id="carIco">directions_car</mat-icon>
+      &nbsp;&nbsp; Display New or Used Cars &nbsp;&nbsp;
+      <mat-icon color="primary">directions_car</mat-icon>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>

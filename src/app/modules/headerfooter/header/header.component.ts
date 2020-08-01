@@ -1,5 +1,9 @@
+/*
+* Uddip Amin
+* 991518202
+*/
 import { Component, OnInit, Input } from '@angular/core';
-import { Student } from "../../../student";
+import { MyBio } from "../../../mybio";
 
 @Component({
   selector: 'app-header',
@@ -7,7 +11,7 @@ import { Student } from "../../../student";
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Input() headerInfo: Student;
+  @Input() headerInfo: MyBio;
 
   constructor() { }
 
