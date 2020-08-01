@@ -8,9 +8,23 @@ html, body { height: 100%; }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.mat-tab-label .mat-tab-label-content {
-display: block;
-justify-content: center;
-align-items: center;
-white-space: nowrap;
+td {
+  text-align: center;
+}
+
+h3 {
+  background-color: #cfecfc;
+  border: 4px solid #0040ff;
+  margin: 0px 300px;
+  padding: 10px;
+}
+
+.buttonCSS {
+  font-size: 1.1em;
+  color: navy;
+}
+
+.mat-tab-labels {
+display: flex;
+background-color: #a9c9bd;
 }

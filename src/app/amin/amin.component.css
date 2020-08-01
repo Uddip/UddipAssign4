@@ -2,6 +2,36 @@
 * Uddip Amin
 * 991518202
 */
+.gridArea {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: 'bioInfoArea bioValueArea';
+  grid-row-gap: 20px;
+  margin: 10px 300px;
+  background-color: #cfecfc;
+  border: 4px solid #0040ff;
+}
+
+.bioInfoArea {
+  grid-area: bioInfoArea;
+  text-align: center;
+}
+
+.bioValueArea {
+  grid-area: bioValueArea;
+  text-align: center;
+}
+
+.common {
+  padding: 20px;
+  text-align: center;
+}
+
+.cars {
+  text-align: center;
+}
+
 #tab-bar {
   background-color: #a9c9bd;
 }

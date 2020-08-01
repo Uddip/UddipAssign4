@@ -28,13 +28,53 @@ Uddip Amin
       <mat-icon id="infoIco">info</mat-icon>
       &nbsp;&nbsp; My Info
     </ng-template>
+    <div class="gridArea">
+      <div class="bioInfoArea common">
+        <strong>Name: </strong>
+        <br>
+        <strong>Student ID: </strong>
+        <br>
+        <strong>Status: </strong>
+        <br>
+        <p style="margin-top: 45px;">
+          <strong>Image:</strong>
+        </p>
+      </div>
+      <div class="bioValueArea common">
+        <strong>{{studentInfo.sname}}</strong>
+        <br>
+        <strong>{{studentInfo.sid}}</strong>
+        <br>
+        <strong>{{studentInfo.status}}</strong>
+        <br>
+        <img src="{{studentInfo.imgloc}}" width="150px">
+        <br>
+      </div>
+    </div>
   </mat-tab>
 
   <mat-tab>
     <ng-template mat-tab-label>
       <mat-icon id="carIco">directions_car</mat-icon>
       &nbsp;&nbsp; Display New or Used Cars &nbsp;&nbsp;
-      <mat-icon color="primary">directions_car</mat-icon>
+      <mat-icon color="primary">electric_car</mat-icon>
     </ng-template>
+    <div class="cars">
+      <button mat-raised-button [ngClass]="{buttonCSS: 'true'}"
+              (click)="displayJSON('new')"
+              style="margin-top: 10px;">
+        List of new cars &nbsp;&nbsp;
+        <mat-icon color="primary">new_releases</mat-icon>
+      </button>
+      <hr>
+      <button mat-raised-button [ngClass]="{buttonCSS: 'true'}"
+              (click)="displayJSON('used')">
+        List of used cars &nbsp;&nbsp;
+        <mat-icon color="primary">support</mat-icon>
+      </button>
+      <div id="list">
+        <p [innerHTML]="outArea"></p>
+      </div>
+    </div>
   </mat-tab>
 </mat-tab-group>
